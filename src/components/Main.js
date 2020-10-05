@@ -40,9 +40,8 @@ class Main extends React.Component {
           <article
             id={article.id}
             key={article.id}
-            className={`${this.props.article === article.id ? 'active' : ''} ${
-              this.props.articleTimeout ? 'timeout' : ''
-            }`}
+            className={`${this.props.article === article.id ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''
+              }`}
             style={{ display: 'none' }}
           >
             <h2 className="major">{article.title}</h2>
